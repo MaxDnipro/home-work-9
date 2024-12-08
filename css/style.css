@@ -128,3 +128,32 @@
 .work__title{}
 
 .work__text{}
+
+.video{
+
+}
+.footer{
+  background-color: var(--main-color);
+  
+
+
+}
+.footer__title{
+  color:#FFFFFF;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+
+
+}
+footer span {
+  display: block;
+  color:#FFFFFF;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
