@@ -5,11 +5,12 @@
 
 *{
   margin: 0;
+  box-sizing: border-box;
   font-family: 'Roboto';
   color: #000000;
   font-weight: 400;
   font-size: 16px;
-  line-height: 26.25px;
+  line-height: 26px;
 }
 
 .container{
@@ -17,9 +18,16 @@
   margin: 0 auto;
 }
 
+.block--light{
+  background-color: var(--secondary-color);
+}
+
+.block--dark{
+  background-color: var(--main-color);
+}
+
 [class*="__text"] {
   width: 540px;
-  /* height: 67px; */
   font-size: 16px;
   color:#727272;
 }
@@ -27,29 +35,22 @@
 [class*="__title"]{
   font-size: 32px;
   font-weight: 500;
-  line-height: 37.5px;
-  padding-bottom: 50px;
+  line-height: 38px;  
 }
 
-.header{
-  background-color: var(--secondary-color);
-}
-
+/* header */
 .header__inner{
   padding: 80px 0;
 }
 
 .menu__list{
   display: flex;
-  justify-content:start;
+  justify-content: start;
   gap: 42px;
   padding: 0;
   list-style: none;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-
-.menu__item{
 }
 
 .menu__link{
@@ -70,7 +71,7 @@
 .header__title--main{
   font-size: 48px;
   font-weight: 500;
-  line-height: 78.75px;
+  /* line-height: 78.75px; */
   padding-bottom: 60px;
   margin: 0;
 }
@@ -92,31 +93,28 @@
 }
 
 /* main */
-.main{}
-
 .me__content{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 100px auto 112px;
+  padding-top: 112px;
 }
 .me__title{
+  padding-bottom: 50px;
   
 }
 
 
 .me__text{
+  padding-bottom: 100px;
   
   
 }
 
 .projects{
-  background-color:var(--main-color);
+  /* background-color:var(--main-color); */
   height: 250px;
-}
-.projects__icons{
-  
 }
 
 .icons__list{
@@ -124,8 +122,7 @@
   padding-left: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  
+  align-items: center;  
 }
 
 .icons__item{
@@ -134,21 +131,13 @@
   padding: 100px 0;
   display: flex;
   gap: 20px;
-  align-items:center;
-  
+  align-items:center; 
 }
 
 .icons__text{
   color: #FFFFFF;
   align-self: center;
 }
-
-/* .projects__icon{
-  width: 141px;
-  height: 50px;
-  background: left no-repeat url(../image/project.svg);
-  padding-left: 70px;
-} */
 
 .work__content{
   display: flex;
@@ -158,8 +147,6 @@
   margin: 100px auto 57px;
 }
 
-.work__title{}
-
 .work__text{
   padding-bottom: 57px;
 }
@@ -167,7 +154,6 @@
 
 .video{
   padding: 0 15px 100px;
-
 }
 
 .main__video{
@@ -177,12 +163,6 @@
 }
 
 /* footer */
-.footer{
-  background-color: var(--main-color);
-  
-
-
-}
 .footer__title{
   color:#FFFFFF;
   font-size: 21px;
@@ -190,10 +170,8 @@
   line-height: 24px;
   padding-top: 50px;
   padding-bottom: 20px;
-
-
-
 }
+
 footer span {
   display: block;
   color:#FFFFFF;
